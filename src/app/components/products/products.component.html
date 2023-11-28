@@ -1,0 +1,17 @@
+<li class="macaroon__item" >
+
+<img src="assets/img/macaroons/{{mac.img}}.png" alt="Макарун с малиной" class="macaroon__img-image">
+<div class="" >
+    <div class="macaroon__name" >{{this.productTitle}}</div>
+
+</div>
+<div class="macaroon__order">
+    <div class="macaroon__quantity">{{mac.quantity}}</div>
+    <div class="macaroon__price">{{mac.price}}</div>
+    <div class="macaroon__action">
+        <button class="btn macaroon__btn " appButton (click)="addProductOrder()" >Заказать</button>
+    </div>                    
+</div>
+
+<!-- (click)="scrolOrder(mac.name,oder)" -->
+</li>

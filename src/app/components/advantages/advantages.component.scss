@@ -1,0 +1,62 @@
+.advantages {
+    background: #ffefef;
+    padding: 84px 0 128px 0;
+}
+.advantages__container {
+}
+
+.advantages__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 220px;
+    grid-template-rows: 1fr;
+}
+
+.advantage {
+    max-width: 220px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45px 40px auto;
+    cursor: pointer;
+}
+.advantage:hover .advantage__number{
+    color: rgb(130, 19, 40);
+}
+.advantage:hover .advantage__number::before{
+background-color: #eba8b1;
+}
+.advantage__number {
+        font-size: 60px;
+        font-family: GilroyExtrabold, sans-serif;
+        color: rgb(255, 255, 255);
+        display: flex;
+        align-items: end;
+        justify-content: start;
+        padding-left: 20px;
+        position: relative;
+        z-index: 2;
+        transition: all .5s ease;
+}
+.advantage__number::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #821328;
+    z-index: -1;
+    bottom: 10px;
+    left: 0;
+    transition: all .5s ease;
+}
+.advantage__title {
+        font-size: 20px;
+        font-family: GilroyExtrabold, sans-serif;
+        color: rgb(51, 25, 7);
+    margin-bottom: 25px;
+}
+.advantage__text {
+        font-size: 15px;
+        font-family: GilroyMedium, sans-serif;
+        color: rgb(51, 25, 7);
+        line-height: 1.333;
+}
