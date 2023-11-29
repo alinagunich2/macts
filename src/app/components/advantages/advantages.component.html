@@ -4,7 +4,7 @@
       <li class="advantage" *ngFor="let advan of advants;let i = index">
           <div class="advantage__number">{{i+1}}</div>
           <div class="advantage__title">{{advan.title}}</div>
-          <div class="advantage__text">{{advan.text}}</div>
+          <div class="advantage__text">{{advan.text | textPipe}}</div>
       </li>
     </ul>
     </div>

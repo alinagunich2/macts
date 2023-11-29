@@ -29,5 +29,5 @@ public scrolOrder(name:string,target:HTMLElement):void{
 public isBlock = true
 
 public inst = "https://instagram.com/alina_gunich?igshid=NGVhN2U2NjQ0Yg=="
-public tel = '+375(29)368-98-22'
+public tel = '375297582477'
 }

@@ -7,13 +7,17 @@ import { FormsModule } from '@angular/forms';
 import { AdvantagesComponent } from './components/advantages/advantages.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ButtonDirective } from './directives/button.directive';
+import { TextPipe } from './pipes/text.pipe';
+import { TelPipe } from './pipes/tel.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdvantagesComponent,
     ProductsComponent,
-    ButtonDirective
+    ButtonDirective,
+    TextPipe,
+    TelPipe
   ],
   imports: [
     BrowserModule,
