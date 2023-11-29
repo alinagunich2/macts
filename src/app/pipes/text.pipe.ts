@@ -6,11 +6,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class TextPipe implements PipeTransform {
 
   transform(value: string): string {
-    if(value.length <= 95) {
-      return value;
-  } else {
-    value = value.slice(0, 95);
-      return value + "...";
+    const res = value.length <= 95? value:`${value.slice(0, 95)}...`
+return res
   }
-  }
+
 }
