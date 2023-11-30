@@ -13,22 +13,22 @@ export class ButtonDirective implements OnInit{
     private rend:Renderer2) { }
 
 
-//   private _isOnFo:boolean=false
-//   @HostBinding('class.isOnFo')
-//   get GetIsOnFo(){
-//    return this._isOnFo
-//   }
+  private _isOnFo:boolean=false
+  @HostBinding('class.isOnFo')
+  get GetIsOnFo(){
+   return this._isOnFo
+  }
 
-//   @HostListener('focus')
-//   onFocus(){
-//    this._isOnFo=true
-//    this._backgroundColor=this.coollMauseBgColor 
-//   }
+  @HostListener('focus')
+  onFocus(){
+   this._isOnFo=true
+   this._backgroundColor=this.coollMauseBgColor 
+  }
 
-// @HostBinding('style.backgroundColor')
-// get GetBgColor(){
-//   return this._backgroundColor
-// }
+@HostBinding('style.backgroundColor')
+get GetBgColor(){
+  return this._backgroundColor
+}
 
 // @HostListener('blur', ['$event.target'])
 // onFocus(btn:any) {
@@ -38,12 +38,11 @@ export class ButtonDirective implements OnInit{
 //   }
 
 
-  // ngOnInit(): void {
-  //   this._backgroundColor=this.coollDefaultBgColor //rgb(113, 8, 30);
-  // }
-
   ngOnInit(): void {
     this._backgroundColor=this.coollDefaultBgColor //rgb(113, 8, 30);
+    console.log(this.el)
   }
+
+
 
 }

@@ -26,8 +26,8 @@ public scrolOrder(name:string,target:HTMLElement):void{
   this.formVal.names = name.toLocaleUpperCase()
   this.scrollTo(target)
 }
-public isBlock = true
+public isBlock:boolean = true
 
-public inst = "https://instagram.com/alina_gunich?igshid=NGVhN2U2NjQ0Yg=="
-public tel = '375297582477'
+public inst:string = "https://instagram.com/alina_gunich?igshid=NGVhN2U2NjQ0Yg=="
+public tel:string = '375297582477'
 }

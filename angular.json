@@ -3,6 +3,22 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    
+    "my-project": {
+      "i18n": { 
+        "sourceLocale": {  
+          "code": "ru",
+          "baseHref": "/ru/" 
+        },
+        "locales": {
+          "en": {
+            "translation": "src/locale/messages.en.xlf", 
+            "baseHref": "/en/"
+          }
+        }
+      },
+
+
     "mac-ng": {
       "projectType": "application",
       "schematics": {
@@ -17,6 +33,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": true,
+            "i18nMissingTranslation": "error",
+
             "outputPath": "dist/mac-ng",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -107,4 +126,5 @@
   "cli": {
     "analytics": "89ce9c33-f70c-4d8f-bd36-9826c299906a"
   }
+}
 }

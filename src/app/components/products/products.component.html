@@ -7,11 +7,15 @@
 </div>
 <div class="macaroon__order">
     <div class="macaroon__quantity">{{mac.quantity}}</div>
-    <div class="macaroon__price">{{mac.price | currency:'руб.':true}}</div>
+    <div class="macaroon__price" >{{mac.price | currency:'RUB':'руб.':"1.2-2"}}</div>
     <div class="macaroon__action">
         <button class="btn macaroon__btn " 
-      
+    
         (click)="addProductOrder()" >Заказать</button>
     </div>                    
 </div>
 </li>
+<!-- 
+appButton
+[coollDefaultBgColor]="'white'"
+[coollMauseBgColor]="'orange'" -->
